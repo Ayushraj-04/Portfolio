@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
+    <style>
+        /* Social Icons Styling */
+        .social-icons {
+            display: flex;
+            justify-content: center;
+            gap: 20px; /* Increased spacing between icons */
+            margin-top: 20px;
+        }
+
+        .social-icons a {
+            display: inline-block;
+            width: 40px;
+            height: 40px;
+            border-radius: 50%; /* Make the icons circular */
+            overflow: hidden;
+            background-color: #f0f0f0; /* Blend with the background */
+            transition: background-color 0.3s ease;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        .social-icons a:hover {
+            background-color: #e0e0e0; /* Slight hover effect */
+        }
+
+        .social-icons img {
+            width: 20px;
+            height: 20px;
+        }
+
+        .skills-grid, .languages-grid, .education-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+            gap: 20px;
+            margin-top: 20px;
+        }
+
+        .skills-grid div, .languages-grid div, .education-card {
+            background-color: #f8f8f8;
+            padding: 15px;
+            text-align: center;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        .projects-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+            margin-top: 20px;
+        }
+
+        .project-card {
+            background-color: #f9f9f9;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .project-card:hover {
+            transform: translateY(-10px); /* Pop-up effect */
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Ayush Raj</h1>
+            <nav>
+                <ul>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#languages">Languages</a></li>
+                    <li><a href="#education">Education</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section id="about" class="section">
+        <div class="container">
+            <h2>About Me</h2>
+            <p>Hi 👋 there, I'm Ayush Raj , a second-year B.Tech student at SRM-IST .I'm passionate about learning and building cool projects. I enjoy exploring new technologies and improving my skills in programming and design. My goal is to gain practical experience and contribute to innovative solutions. When I'm not studying, I like playing video games and capturing some beautiful moments 🎴.</p>
+        </div>
+    </section>
+
+    <section id="skills" class="section">
+        <div class="container">
+            <h2>Skills</h2>
+            <div class="skills-grid">
+                <div>HTML</div>
+                <div>CSS</div>
+                <div>JavaScript</div>
+                <div>Node.js(basics)</div>
+            </div>
+        </div>
+    </section>
+
+    <section id="projects" class="section">
+        <div class="container">
+            <h2>Projects</h2>
+            <div class="projects-grid">
+                <div class="project-card">
+                    <a href="https://github.com/Ayushraj-04/attendance-tracker" target="_blank" class="project-card">
+                    <h3>Attendance Tracker</h3>
+                    <p>This Attendance Tracker is a Python-based application using Tkinter for the GUI and Openpyxl to manage Excel attendance sheets.</p>
+                </a>
+                </div>
+                <div class="project-card">
+                    <h3>Finance Management System</h3>
+                    <p>currently working on it...........</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="languages" class="section">
+        <div class="container">
+            <h2>Languages</h2>
+            <div class="languages-grid">
+                <div>C</div>
+                <div>C++</div>
+                <div>Python</div>
+                <div>Java</div>
+                <div>SQL</div>
+            </div>
+        </div>
+    </section>
+
+    <section id="education" class="section">
+        <div class="container">
+            <h2>Education</h2>
+            <div class="education-grid">
+                <div class="education-card">
+                    <h3>Schooling</h3>
+                    <p>DAV Public School .</p>
+                    <p>(2008-2023)</p>
+                </div>
+                <div class="education-card">
+                    <h3>College</h3>
+                    <p>SRM IST</p>
+                    <p>(2023-Present)</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="section">
+        <div class="container">
+            <h2>Contact Me</h2>
+            <form action="#">
+                <input type="text" placeholder="Your Name" required>
+                <input type="email" placeholder="Your Email" required>
+                <textarea placeholder="Your Message" required></textarea>
+                <button type="submit">Send</button>
+            </form>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 Ayush Raj. All Rights Reserved.</p>
+        <div class="social-icons">
+            <a href="https://www.linkedin.com/in/ayush-raj-3398b1286?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank" aria-label="LinkedIn">
+                <img src="https://cdn-icons-png.flaticon.com/512/174/174857.png" alt="LinkedIn">
+            </a>
+            <a href="https://github.com/Ayushraj-04" target="_blank" aria-label="GitHub">
+                <img src="https://cdn-icons-png.flaticon.com/512/25/25231.png" alt="GitHub">
+            </a>
+            <a href="https://www.instagram.com/ayush.__raj?igsh=MXN4NnJ2bzltNW85bQ==" target="_blank" aria-label="Instagram">
+                <img src="https://cdn-icons-png.flaticon.com/512/174/174855.png" alt="Instagram">
+            </a>
+        </div>
+    </footer>
+</body>
+</html>
